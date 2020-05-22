@@ -171,6 +171,15 @@ body {
   padding-top: 5rem;
   text-align: right;
 }
+.skills {
+  flex-direction: column;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+.skills1 {
+  display: flex;
+}
 ol {
   list-style: none;
 }
@@ -202,4 +211,22 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+@media (max-width: 500px) {
+  body {
+    height: 100%;
+    text-decoration: none;
+  }
+  .firstBackground nav {
+    padding: 1rem;
+    padding-top: inherit;
+    font-size: 1.3rem;
+    margin-right: 10rem;
+  }
+  .skills1 {
+    flex-direction: column;
+    font-size: 2rem;
+    color: grey;
+    margin-bottom: 2rem;
+  }
 }
