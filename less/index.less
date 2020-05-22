@@ -4,6 +4,7 @@
    License: none (public domain)
 */
 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -28,32 +29,118 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
+
+}
+
+@font_family_1: "lato";
+@font_family_2: "georgia"
+@background_color_1: skyblue;
+@background_color_2: lightgoldenrodyellow;
+@background_color_3: lightsalmon;
+@background_color_4: lightsteelblue;
+@background_color_5: linen;
+
+/* Set every element's box-sizing to border-box */
+html {
+	height: 100%;
+	height: 100%;
+	text-decoration: none;
 }
 body {
-	line-height: 1;
+	height: 100%;
+	height: 100%;
+	text-decoration: none;
 }
-ol, ul {
+#wrap {
+	.col {
+		float: right;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+	body {
+		line-height: 1;
+		background-color: @background_color_1;
+		padding-top: 50px;
+		text-align: center;
+		font-family: @font_family_1;
+	}
+
+.firstBackground nav {
+	padding: 1rem;
+	padding-top: inherit;
+	font-size: 2rem;
+}
+
+.nameTitle {
+	border: 100%;
+	margin-right: 50%;
+	font-size: 2rem;
+	font-style: oblique;
+}
+.profilePhoto {
+	display: flex;
+	padding: 3rem;
+}
+.bio {
+	background-color: @background_color_2;
+	border-radius: 30rem;
+	margin: 3rem;
+	padding: 3rem;
+}
+.button {
+	background-color: @background_color_3;
+	border-radius: 500rem;
+	border-top-left-radius: 550rem;
+	border-bottom-left-radius: 0;
+	display: flex;
+}
+.firstBackground {
+	background-color: @background_color_4;
+	border: 90%;
+	border-top-right-radius: 15rem;
+}
+.moreInfo {
+	background-color: @background_color_5;
+	border-bottom-left-radius: 20rem;
+	border-bottom-right-radius: 20rem;
+	padding: 10rem;
+}
+.hobby {
+	padding-top: 5rem;
+	text-align: right;
+}
+ol {
 	list-style: none;
 }
-blockquote, q {
-	quotes: none;
+ul {
+	list-style: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote {
+	quotes: inherit;
+	&:before {
+		content: '';
+		content: none;
+	}
+	&:after {
+		content: '';
+		content: none;
+	}
+}
+q {
+	quotes: none;
+	&:before {
+		content: '';
+		content: none;
+	}
+	&:after {
+		content: '';
+		content: none;
+	}
 }
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-/* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-}
-
